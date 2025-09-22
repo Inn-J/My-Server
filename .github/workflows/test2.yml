@@ -3,14 +3,14 @@ name: test2
 on:
   push:
     branches:
-      -main
+      - main
 jobs:
   job1:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/check@v2
+      uses: actions/checkout@v2
 
     - name: Setup node.js
       uses: actions/setup-node@v2
@@ -18,7 +18,7 @@ jobs:
         node-version: '14'
     - name: Run Test
       run: |
-        output=${node dist/Test1.js
+        output=${node dist/Test1.js}
         # capture exit code
         exit_code=$output
 
