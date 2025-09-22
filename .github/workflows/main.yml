@@ -4,5 +4,8 @@ jobs:
     build:
       runs-on: ubuntu-latest
       steps:
-        - name: my-step
-          run: echo "Hello World"
+        - name: Checkout code
+          uses: actions/checkout@v2
+
+        - name: Print text from file.txt
+          run: cat dist/index.js 
