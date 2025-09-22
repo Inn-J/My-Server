@@ -7,3 +7,9 @@ if ((0, Utils_1.add)(2, 3) === 5) {
 else {
     console.log(1);
 }
+if ((0, Utils_1.add)(-2, -3) === -5) {
+    console.log(0);
+}
+else {
+    console.log(2);
+}
