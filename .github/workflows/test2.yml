@@ -18,7 +18,7 @@ jobs:
         node-version: '14'
     - name: Run Test
       run: |
-        output=$(node dist/Test1.js)
+        output=$(node dist/test1.js)
         # capture exit code
         exit_code=$output
 
