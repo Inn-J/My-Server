@@ -37,7 +37,7 @@ jobs:
         with:
           registry: ghcr.io
           username: Inn-J
-          password: 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
+          password: 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
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
