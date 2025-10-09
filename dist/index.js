@@ -6,8 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const Express = require("express");
 const mongoose_1 = __importDefault(require("mongoose"));
 const cors_1 = __importDefault(require("cors"));
-//import { Utils } from './Utils';
-const UserRoutes_1 = __importDefault(require("./UserRoutes"));
 const path_1 = __importDefault(require("path"));
 const app = Express();
 const port = 3000;
@@ -26,7 +24,7 @@ app.use(Express.json());
 app.get("/", (req, res) => {
     res.send("Hello World!");
 });
-app.use("/api", UserRoutes_1.default);
+//app.use("/api",userRoutes);
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
